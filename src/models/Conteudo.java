@@ -16,6 +16,8 @@ public abstract class Conteudo {
 
     public abstract double calcularXp();
 
+    public abstract void exibirConteudo();
+
     public String getTitulo() {
         return titulo;
     }
@@ -47,14 +49,5 @@ public abstract class Conteudo {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
-    }
-
-    @Override
-    public String toString() {
-        return "Conteudo{" +
-                "id=" + id +
-                ", titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
-                '}';
     }
 }
